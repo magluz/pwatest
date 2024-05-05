@@ -2,7 +2,6 @@
   <v-container class="fill-height">
     <v-responsive
       class="align-centerfill-height mx-auto"
-      max-width="900"
     >
       <v-img
         class="mb-4"
@@ -52,7 +51,7 @@
           </v-card>
         </v-col>
 
-        <v-col cols="6">
+        <v-col cols="12" md="6">
           <v-card
             append-icon="mdi-open-in-new"
             class="py-4"
@@ -76,7 +75,7 @@
           </v-card>
         </v-col>
 
-        <v-col cols="6">
+        <v-col cols="12" md="6">
           <v-card
             append-icon="mdi-open-in-new"
             class="py-4"
@@ -100,7 +99,7 @@
           </v-card>
         </v-col>
 
-        <v-col cols="6">
+        <v-col cols="12" md="6">
           <v-card
             append-icon="mdi-open-in-new"
             class="py-4"
@@ -124,7 +123,7 @@
           </v-card>
         </v-col>
 
-        <v-col cols="6">
+        <v-col cols="12" md="6">
           <v-card
             append-icon="mdi-open-in-new"
             class="py-4"
