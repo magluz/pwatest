@@ -25,10 +25,10 @@ export default defineConfig({
         name: 'Projeto Teste PWA',
         short_name: 'PwaTest',
         description: '',
-        theme_color: '#4DBA87',
+        theme_color: '#28367B',
         scope: "/index.html",
         display: "standalone",
-        background_color: "#000000",
+        background_color: "#FFFFFF",
         icons:[
           {
             src: "/img/icons/pwa-192x192.png",
