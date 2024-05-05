@@ -17,7 +17,32 @@ export default defineConfig({
   plugins: [
     VueRouter(),
     Layouts(),
-    VitePWA({ registerType: 'autoUpdate' }),
+    VitePWA({ 
+      injectRegister: 'auto',
+      registerType: 'autoUpdate',
+      includeAssets: ['favicon.ico','apple-touch-icon.png','mask-icon.svg'],
+      manifest:{
+        name: 'Projeto Teste PWA',
+        short_name: 'PwaTest',
+        description: '',
+        theme_color: '#4DBA87',
+        scope: "/index.html",
+        display: "standalone",
+        background_color: "#000000",
+        icons:[
+          {
+            src: "/img/icons/pwa-192x192.png",
+            sizes: "192x192",
+            type: "image/png"
+          },
+          {
+            src: "/img/icons/pwa-512x512.png",
+            sizes: "512x512",
+            type: "image/png"
+          }
+        ]
+      }
+     }),
     Vue({
       template: { transformAssetUrls }
     }),
@@ -48,7 +73,10 @@ export default defineConfig({
       vueTemplate: true,
     }),
   ],
-  define: { 'process.env': {} },
+  define: { 'process.env': {
+    BASE_URL: '/'
+  } },
+  //publicDir: "public",
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url))
