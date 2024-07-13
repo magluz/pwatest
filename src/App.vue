@@ -9,3 +9,8 @@
 <script setup>
   //
 </script>
+<style lang="css">
+.v-application__wrap{
+  background: #fff !important;
+}
+</style>
